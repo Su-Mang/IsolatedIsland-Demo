@@ -1,0 +1,7 @@
+platform :ios,'7.0'
+target 'IsolatedIsland Demo' do
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'SDWebImage'
+pod 'FMDB'
+end
