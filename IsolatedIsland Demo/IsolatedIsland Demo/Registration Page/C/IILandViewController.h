@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IILandView.h"
 NS_ASSUME_NONNULL_BEGIN
-
+@class IILandView;
 @interface IILandViewController : UIViewController
 @property IILandView * landView;
 @end

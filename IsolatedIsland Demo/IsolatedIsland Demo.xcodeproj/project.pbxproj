@@ -21,9 +21,12 @@
 		7C72B4A123D07AFF006435F4 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C72B4A023D07AFF006435F4 /* back.png */; };
 		7C72B4A323D07C95006435F4 /* spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C72B4A223D07C95006435F4 /* spot.png */; };
 		7C72B4A523D0B30D006435F4 /* mimakejian.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C72B4A423D0B30D006435F4 /* mimakejian.png */; };
-		7C72B4A723D0B312006435F4 /* mimabukejian.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C72B4A623D0B312006435F4 /* mimabukejian.png */; };
-		7C72B4AA23D0B383006435F4 /* aHR0cHM6Ly90dmExLnNpbmFpbWcuY24vbGFyZ2UvMDA2dE5iUndseTFnOWt4dTJyNmN0ajMwd2gwZjF3aHcuanBn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7C72B4A823D0B383006435F4 /* aHR0cHM6Ly90dmExLnNpbmFpbWcuY24vbGFyZ2UvMDA2dE5iUndseTFnOWt4dTJyNmN0ajMwd2gwZjF3aHcuanBn.jpeg */; };
 		7C72B4AB23D0B383006435F4 /* htmal5icon08-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C72B4A923D0B383006435F4 /* htmal5icon08-2.png */; };
+		7CE4D2B723D2C127004D6308 /* IIRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4D2B623D2C127004D6308 /* IIRegistrationViewController.m */; };
+		7CE4D2BA23D2C28B004D6308 /* IIRegistrationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4D2B923D2C28B004D6308 /* IIRegistrationView.m */; };
+		7CE4D2BD23D2C9A6004D6308 /* landSpot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4D2BC23D2C9A6004D6308 /* landSpot.png */; };
+		7CE4D2C423D2CF9E004D6308 /* IIForgetPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4D2C323D2CF9E004D6308 /* IIForgetPageViewController.m */; };
+		7CE4D2C723D2D125004D6308 /* IIForgetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4D2C623D2D125004D6308 /* IIForgetView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,9 +53,16 @@
 		7C72B4A023D07AFF006435F4 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		7C72B4A223D07C95006435F4 /* spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spot.png; sourceTree = "<group>"; };
 		7C72B4A423D0B30D006435F4 /* mimakejian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mimakejian.png; sourceTree = "<group>"; };
-		7C72B4A623D0B312006435F4 /* mimabukejian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mimabukejian.png; sourceTree = "<group>"; };
-		7C72B4A823D0B383006435F4 /* aHR0cHM6Ly90dmExLnNpbmFpbWcuY24vbGFyZ2UvMDA2dE5iUndseTFnOWt4dTJyNmN0ajMwd2gwZjF3aHcuanBn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aHR0cHM6Ly90dmExLnNpbmFpbWcuY24vbGFyZ2UvMDA2dE5iUndseTFnOWt4dTJyNmN0ajMwd2gwZjF3aHcuanBn.jpeg; sourceTree = "<group>"; };
 		7C72B4A923D0B383006435F4 /* htmal5icon08-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "htmal5icon08-2.png"; sourceTree = "<group>"; };
+		7CE4D2B523D2C127004D6308 /* IIRegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIRegistrationViewController.h; sourceTree = "<group>"; };
+		7CE4D2B623D2C127004D6308 /* IIRegistrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIRegistrationViewController.m; sourceTree = "<group>"; };
+		7CE4D2B823D2C28B004D6308 /* IIRegistrationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIRegistrationView.h; sourceTree = "<group>"; };
+		7CE4D2B923D2C28B004D6308 /* IIRegistrationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIRegistrationView.m; sourceTree = "<group>"; };
+		7CE4D2BC23D2C9A6004D6308 /* landSpot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landSpot.png; sourceTree = "<group>"; };
+		7CE4D2C223D2CF9E004D6308 /* IIForgetPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIForgetPageViewController.h; sourceTree = "<group>"; };
+		7CE4D2C323D2CF9E004D6308 /* IIForgetPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIForgetPageViewController.m; sourceTree = "<group>"; };
+		7CE4D2C523D2D125004D6308 /* IIForgetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIForgetView.h; sourceTree = "<group>"; };
+		7CE4D2C623D2D125004D6308 /* IIForgetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIForgetView.m; sourceTree = "<group>"; };
 		D20CE1C603E2BE7961EDB7A2 /* Pods-IsolatedIsland Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsolatedIsland Demo.debug.xcconfig"; path = "Target Support Files/Pods-IsolatedIsland Demo/Pods-IsolatedIsland Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +104,7 @@
 				7C72B46C23D06A26006435F4 /* ViewController.h */,
 				7C72B46D23D06A26006435F4 /* ViewController.m */,
 				7C72B49E23D07ACF006435F4 /* Pic */,
+				7CE4D2BE23D2CF52004D6308 /* ForgetPage */,
 				7C72B49423D07957006435F4 /* LandPage */,
 				7C72B48F23D07923006435F4 /* Registration Page */,
 				7C72B47F23D06F34006435F4 /* LandingRegistration page */,
@@ -179,6 +190,9 @@
 		7C72B49423D07957006435F4 /* LandPage */ = {
 			isa = PBXGroup;
 			children = (
+				7CE4D2AE23D2BFC4004D6308 /* M */,
+				7CE4D2AD23D2BFBF004D6308 /* V */,
+				7CE4D2AC23D2BFB7004D6308 /* C */,
 			);
 			path = LandPage;
 			sourceTree = "<group>";
@@ -186,6 +200,7 @@
 		7C72B49E23D07ACF006435F4 /* Pic */ = {
 			isa = PBXGroup;
 			children = (
+				7CE4D2BB23D2C98B004D6308 /* Resigation */,
 				7C72B49F23D07AE4006435F4 /* New Group */,
 			);
 			path = Pic;
@@ -194,14 +209,80 @@
 		7C72B49F23D07AE4006435F4 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				7C72B4A823D0B383006435F4 /* aHR0cHM6Ly90dmExLnNpbmFpbWcuY24vbGFyZ2UvMDA2dE5iUndseTFnOWt4dTJyNmN0ajMwd2gwZjF3aHcuanBn.jpeg */,
 				7C72B4A923D0B383006435F4 /* htmal5icon08-2.png */,
-				7C72B4A623D0B312006435F4 /* mimabukejian.png */,
 				7C72B4A423D0B30D006435F4 /* mimakejian.png */,
 				7C72B4A223D07C95006435F4 /* spot.png */,
 				7C72B4A023D07AFF006435F4 /* back.png */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7CE4D2AC23D2BFB7004D6308 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				7CE4D2B523D2C127004D6308 /* IIRegistrationViewController.h */,
+				7CE4D2B623D2C127004D6308 /* IIRegistrationViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		7CE4D2AD23D2BFBF004D6308 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				7CE4D2B823D2C28B004D6308 /* IIRegistrationView.h */,
+				7CE4D2B923D2C28B004D6308 /* IIRegistrationView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		7CE4D2AE23D2BFC4004D6308 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		7CE4D2BB23D2C98B004D6308 /* Resigation */ = {
+			isa = PBXGroup;
+			children = (
+				7CE4D2BC23D2C9A6004D6308 /* landSpot.png */,
+			);
+			path = Resigation;
+			sourceTree = "<group>";
+		};
+		7CE4D2BE23D2CF52004D6308 /* ForgetPage */ = {
+			isa = PBXGroup;
+			children = (
+				7CE4D2C123D2CF7D004D6308 /* M */,
+				7CE4D2C023D2CF78004D6308 /* V */,
+				7CE4D2BF23D2CF6E004D6308 /* C */,
+			);
+			path = ForgetPage;
+			sourceTree = "<group>";
+		};
+		7CE4D2BF23D2CF6E004D6308 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				7CE4D2C223D2CF9E004D6308 /* IIForgetPageViewController.h */,
+				7CE4D2C323D2CF9E004D6308 /* IIForgetPageViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		7CE4D2C023D2CF78004D6308 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				7CE4D2C523D2D125004D6308 /* IIForgetView.h */,
+				7CE4D2C623D2D125004D6308 /* IIForgetView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		7CE4D2C123D2CF7D004D6308 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
 			sourceTree = "<group>";
 		};
 		D0E3A089757FA9E6656D05C6 /* Pods */ = {
@@ -283,10 +364,9 @@
 				7C72B47623D06A34006435F4 /* LaunchScreen.storyboard in Resources */,
 				7C72B4AB23D0B383006435F4 /* htmal5icon08-2.png in Resources */,
 				7C72B47323D06A34006435F4 /* Assets.xcassets in Resources */,
-				7C72B4A723D0B312006435F4 /* mimabukejian.png in Resources */,
-				7C72B4AA23D0B383006435F4 /* aHR0cHM6Ly90dmExLnNpbmFpbWcuY24vbGFyZ2UvMDA2dE5iUndseTFnOWt4dTJyNmN0ajMwd2gwZjF3aHcuanBn.jpeg in Resources */,
 				7C72B4A523D0B30D006435F4 /* mimakejian.png in Resources */,
 				7C72B47123D06A26006435F4 /* Main.storyboard in Resources */,
+				7CE4D2BD23D2C9A6004D6308 /* landSpot.png in Resources */,
 				7C72B4A323D07C95006435F4 /* spot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,9 +405,13 @@
 			files = (
 				7C72B49723D079B1006435F4 /* IILandRegistrationViewController.m in Sources */,
 				7C72B46E23D06A26006435F4 /* ViewController.m in Sources */,
+				7CE4D2C723D2D125004D6308 /* IIForgetView.m in Sources */,
 				7C72B48E23D07303006435F4 /* LandingRegistrationView.m in Sources */,
 				7C72B47923D06A34006435F4 /* main.m in Sources */,
+				7CE4D2C423D2CF9E004D6308 /* IIForgetPageViewController.m in Sources */,
+				7CE4D2BA23D2C28B004D6308 /* IIRegistrationView.m in Sources */,
 				7C72B49D23D07A0C006435F4 /* IILandView.m in Sources */,
+				7CE4D2B723D2C127004D6308 /* IIRegistrationViewController.m in Sources */,
 				7C72B46B23D06A26006435F4 /* AppDelegate.m in Sources */,
 				7C72B49A23D079F3006435F4 /* IILandViewController.m in Sources */,
 			);

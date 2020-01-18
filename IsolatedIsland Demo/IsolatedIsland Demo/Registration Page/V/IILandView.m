@@ -32,8 +32,8 @@
         _registrationButton = [[UIButton alloc] init];
         [self addSubview:_registrationButton];
         [_registrationButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(_backbutton.mas_bottom).offset(70);
-            make.left.mas_equalTo(_backbutton.mas_right);
+            make.top.mas_equalTo(self->_backbutton.mas_bottom).offset(70);
+            make.left.mas_equalTo(self->_backbutton.mas_right);
             make.width.mas_equalTo(100);
             make.height.mas_equalTo(50);
         }];
@@ -44,16 +44,16 @@
         
         
         //登录Button
-        _LandButton = [[UIButton alloc]init];
-        [self addSubview:_LandButton];
-        [_LandButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(_registrationButton);
-            make.left.mas_equalTo(_registrationButton.mas_right).offset(20);
-            make.width.height.mas_equalTo(_registrationButton);
+        _landButton = [[UIButton alloc]init];
+        [self addSubview:_landButton];
+        [_landButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self->_registrationButton);
+            make.left.mas_equalTo(self->_registrationButton.mas_right).offset(20);
+            make.width.height.mas_equalTo(self->_registrationButton);
         }];
-         [_LandButton setTitle:@"现在登陆" forState:UIControlStateNormal];
-        _LandButton.titleLabel.font = [UIFont systemFontOfSize:14];
-        [_LandButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+         [_landButton setTitle:@"现在登陆" forState:UIControlStateNormal];
+        _landButton.titleLabel.font = [UIFont systemFontOfSize:14];
+        [_landButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     
     
         //点图片
@@ -62,7 +62,7 @@
 
         [_spotButton setImage:[UIImage imageNamed:@"spot.png"] forState: UIControlStateNormal];
         [_spotButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(_registrationButton.mas_bottom).offset(10); make.left.mas_equalTo(_registrationButton).mas_offset(20);
+            make.top.mas_equalTo(self->_registrationButton.mas_bottom).offset(10); make.left.mas_equalTo(self->_registrationButton).mas_offset(20);
             make.width.mas_equalTo(60);
             make.height.mas_equalTo(20);
         }];
@@ -71,12 +71,13 @@
         _telTextField = [[UITextField alloc] init];
         [self addSubview:_telTextField];
         [_telTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(_LandButton.mas_bottom).offset(70);
+            make.top.mas_equalTo(self->_landButton.mas_bottom).offset(70);
             make.left.mas_equalTo(self).offset(60);
             make.right.mas_equalTo(self).offset(-60);
             make.height.mas_offset(50);
         }];
-        _telTextField.placeholder = @"         输入手机号码";
+        _telTextField.placeholder = @"        输入手机号码";
+        [_telTextField setValue:[NSNumber numberWithInt:20] forKey:@"paddingLeft"];
         _telTextField.font = [UIFont systemFontOfSize:TextFieldfont];
         _telTextField.backgroundColor = mainBackTextfieldColor;
         _telTextField.layer.cornerRadius = 10;
@@ -85,19 +86,21 @@
         _verificationTextField = [[UITextField alloc] init];
         [self addSubview:_verificationTextField];
         [_verificationTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(_telTextField.mas_bottom).offset(40);
+            make.top.mas_equalTo(self->_telTextField.mas_bottom).offset(40);
             make.left.mas_equalTo(self).offset(60);
             make.right.mas_equalTo(self).offset(-60);
             make.height.mas_offset(50);
+            
         }];
         _verificationTextField.placeholder = @"      请输入验证码";
+        [_verificationTextField setValue:[NSNumber numberWithInt:20] forKey:@"paddingLeft"];
         _verificationTextField.font = [UIFont systemFontOfSize:TextFieldfont];
         _verificationTextField.backgroundColor = mainBackTextfieldColor;
         _verificationTextField.layer.cornerRadius = 10;
         
         //获取验证码
-        _getverificationButton = [[UIButton alloc] initWithFrame:CGRectMake(200, 0, 94, 50)];
-        [_verificationTextField addSubview:_getverificationButton];
+        _getverificationButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 350, 94, 50)];
+        [self addSubview:_getverificationButton];
         [_getverificationButton setTitle:@"获取验证码" forState:UIControlStateNormal];
         [_getverificationButton.titleLabel setFont:[UIFont systemFontOfSize:TextFieldfont]];
          [_getverificationButton setTitleColor:mainColor forState:UIControlStateNormal];
@@ -107,8 +110,10 @@
         //密码输入框
         _passwordTextField = [[UITextField alloc] init];
         [self addSubview:_passwordTextField];
+        [_passwordTextField setValue:[NSNumber numberWithInt:20] forKey:@"paddingLeft"];
+        _passwordTextField.secureTextEntry = YES;
         [_passwordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(_verificationTextField.mas_bottom).offset(40);
+            make.top.mas_equalTo(self->_verificationTextField.mas_bottom).offset(40);
             make.left.mas_equalTo(self).offset(60);
             make.right.mas_equalTo(self).offset(-60);
             make.height.mas_offset(50);
@@ -118,15 +123,16 @@
         _passwordTextField.backgroundColor = mainBackTextfieldColor;
         _passwordTextField.layer.cornerRadius = 10;
         
-        _visibleButton = [[UIButton alloc] initWithFrame:CGRectMake(200, 0, 94, 50)];
-        [_passwordTextField addSubview:_visibleButton];
+        _visibleButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 440, 94, 50)];
+        [self addSubview:_visibleButton];
         [_visibleButton setImage:[UIImage imageNamed:@"htmal5icon08-2.png"] forState:UIControlStateNormal];
+        [_visibleButton setImage:[UIImage imageNamed:@"mimakejian.png"] forState:UIControlStateSelected];
         
         //下一步输入框
         _nextButton = [[UIButton alloc] init];
         [self addSubview:_nextButton];
         [_nextButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(_passwordTextField.mas_bottom).offset(70);
+            make.top.mas_equalTo(self->_passwordTextField.mas_bottom).offset(70);
             make.left.mas_equalTo(self).offset(100);
             make.right.mas_equalTo(self).offset(-100);
             make.height.mas_offset(50);

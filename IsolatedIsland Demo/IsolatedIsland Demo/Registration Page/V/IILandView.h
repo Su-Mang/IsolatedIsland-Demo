@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IILandView : UIView
-@property(nonatomic, strong)UIButton * LandButton;
+
+@property(nonatomic, strong)UIButton * landButton;
 @property(nonatomic, strong)UIButton * registrationButton;
 @property(nonatomic, strong)UIButton * spotButton;
 @property(nonatomic, strong)UITextField * telTextField;
