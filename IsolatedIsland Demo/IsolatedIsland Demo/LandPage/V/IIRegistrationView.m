@@ -25,7 +25,8 @@
         [_backButton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
         [self addSubview:_backButton];
         [_backButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.mas_equalTo(self).offset(30);
+            make.top.mas_equalTo(self).offset(45);
+            make.left.mas_equalTo(self).offset(20);
             make.width.mas_equalTo(40);
             make.height.mas_equalTo(40);
         }];
@@ -87,7 +88,7 @@
         _passwordTextField.layer.cornerRadius = 10;
         
         //忘记密码Button
-        _forgetPasswordButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 350, 94, 50)];
+        _forgetPasswordButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 365, 94, 50)];
         [self addSubview:_forgetPasswordButton];
         [_forgetPasswordButton setTitle:@"忘记密码" forState:UIControlStateNormal];
         [_forgetPasswordButton.titleLabel setFont:[UIFont systemFontOfSize:TextFieldfont]];

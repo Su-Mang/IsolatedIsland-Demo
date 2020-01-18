@@ -23,7 +23,8 @@
         [_backbutton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
         [self addSubview:_backbutton];
         [_backbutton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.mas_equalTo(self).offset(30);
+            make.top.mas_equalTo(self).offset(45);
+            make.left.mas_equalTo(self).offset(20);
             make.width.mas_equalTo(40);
             make.height.mas_equalTo(40);
         }];
@@ -99,7 +100,7 @@
         _verificationTextField.layer.cornerRadius = 10;
         
         //获取验证码
-        _getverificationButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 350, 94, 50)];
+        _getverificationButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 365, 94, 50)];
         [self addSubview:_getverificationButton];
         [_getverificationButton setTitle:@"获取验证码" forState:UIControlStateNormal];
         [_getverificationButton.titleLabel setFont:[UIFont systemFontOfSize:TextFieldfont]];
@@ -123,7 +124,7 @@
         _passwordTextField.backgroundColor = mainBackTextfieldColor;
         _passwordTextField.layer.cornerRadius = 10;
         
-        _visibleButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 440, 94, 50)];
+        _visibleButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 455, 94, 50)];
         [self addSubview:_visibleButton];
         [_visibleButton setImage:[UIImage imageNamed:@"htmal5icon08-2.png"] forState:UIControlStateNormal];
         [_visibleButton setImage:[UIImage imageNamed:@"mimakejian.png"] forState:UIControlStateSelected];
