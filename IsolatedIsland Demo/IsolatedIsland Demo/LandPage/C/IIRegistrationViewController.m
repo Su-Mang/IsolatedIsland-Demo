@@ -71,9 +71,6 @@
    // [tabarController.tabBar setTintColor:[UIColor colorWithRed:0.937254 green:0.937254 blue:0.937254 alpha:1]];
     tabarController.viewControllers =  navigationControllerArry;
     [self presentViewController:tabarController animated:NO completion:nil];
-   
-    
-    
 }
 -(void)toBack {
     [self dismissViewControllerAnimated:NO completion:nil];

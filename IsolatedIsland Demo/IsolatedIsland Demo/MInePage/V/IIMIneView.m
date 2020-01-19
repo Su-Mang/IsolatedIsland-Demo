@@ -7,6 +7,7 @@
 //
 
 #import "IIMIneView.h"
+#import "IIMIneFourView.h"
 #import <Masonry.h>
 @implementation IIMIneView
 
@@ -80,7 +81,7 @@
         _letternumberLabel = [[UILabel alloc] init];
         [self addSubview:_letternumberLabel];
         [_letternumberLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self->_autographLabel.mas_bottom).offset(10);
+        make.top.mas_equalTo(self->_autographLabel.mas_bottom).offset(20);
             make.left.mas_equalTo(self->_picImageView.mas_right).offset(10);
             make.width.mas_equalTo(150);
             make.height.mas_equalTo(15);
@@ -88,6 +89,65 @@
         _letternumberLabel.text = @"漂流号 :709304";
         _letternumberLabel.textColor = [UIColor grayColor];
         _letternumberLabel.font = [UIFont systemFontOfSize:11];
+        
+        
+        //信签
+        _letterView = [[IIMIneFourView alloc] init];
+        [self addSubview:_letterView];
+        [_letterView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.picImageView.mas_bottom).offset(30);
+            make.left.mas_equalTo(_picImageView);
+            make.width.mas_equalTo(80);
+            make.height.mas_equalTo(60);
+        }];
+        [_letterView setName:@"信签" :@"22"];
+        
+        //岛屿
+        _islandView = [[IIMIneFourView alloc] init];
+        [self addSubview:_islandView];
+        [_islandView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.picImageView.mas_bottom).offset(30);
+            make.left.mas_equalTo(_picImageView);
+            make.width.mas_equalTo(80);
+            make.height.mas_equalTo(60);
+        }];
+        [_islandView setName:@"信签" :@"22"];
+        
+        //岛屿
+        _islandView = [[IIMIneFourView alloc] init];
+        [self addSubview:_islandView];
+        [_islandView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.picImageView.mas_bottom).offset(30);
+            make.left.mas_equalTo(self->_letterView.mas_right).offset(15);
+            make.width.mas_equalTo(80);
+            make.height.mas_equalTo(60);
+        }];
+        [_islandView setName:@"岛屿" :@"10"];
+        
+        //收藏
+        _collectView = [[IIMIneFourView alloc] init];
+        [self addSubview:_collectView];
+        [_collectView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.picImageView.mas_bottom).offset(30);
+            make.left.mas_equalTo(self->_islandView.mas_right).offset(15);
+            make.width.mas_equalTo(80);
+            make.height.mas_equalTo(60);
+        }];
+        [_collectView setName:@"收藏" :@"9"];
+        
+        //创建岛屿
+        _creatView = [[IIMIneFourView alloc] init];
+        [self addSubview:_creatView];
+        [_creatView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.picImageView.mas_bottom).offset(30);
+            make.left.mas_equalTo(self->_collectView.mas_right).offset(15);
+            make.width.mas_equalTo(80);
+            make.height.mas_equalTo(60);
+        }];
+        [_creatView setName:@"创建岛屿" :@""];
+        [_creatView.clickButton setImage:[UIImage imageNamed:@"jiahao.png"] forState:UIControlStateNormal];
+        
+        
         
     }
     return self;

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class IIMIneFourView;
 @interface IIMIneView : UIView
 @property (nonatomic, strong) UILabel * smallmineLabel;
 @property (nonatomic, strong) UILabel * mineLabel;
@@ -23,6 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)UILabel * mineIslandLabel;
 @property (nonatomic, strong)UILabel * recentLabel;
 @property (nonatomic, strong)UITableView * mineTableView;
+@property (nonatomic, strong)IIMIneFourView * letterView;
+@property (nonatomic, strong)IIMIneFourView * islandView;
+@property (nonatomic, strong)IIMIneFourView * collectView;
+@property (nonatomic, strong)IIMIneFourView * creatView;
+
 
 @end
 
