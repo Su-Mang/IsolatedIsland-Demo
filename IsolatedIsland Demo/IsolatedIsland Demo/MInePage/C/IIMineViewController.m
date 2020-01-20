@@ -20,7 +20,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     _mineView = [[IIMIneView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:_mineView];
-    
+
 }
 
 /*

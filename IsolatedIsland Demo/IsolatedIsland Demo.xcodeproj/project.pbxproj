@@ -30,6 +30,10 @@
 		7CBC95D423D58A25006EB363 /* 表情管理.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC95D323D58A25006EB363 /* 表情管理.png */; };
 		7CBC95D623D58A5B006EB363 /* 私密信箱.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC95D523D58A5B006EB363 /* 私密信箱.png */; };
 		7CBC95D823D58B2D006EB363 /* 管理岛屿.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC95D723D58B2D006EB363 /* 管理岛屿.png */; };
+		7CBC95DB23D5F042006EB363 /* IIMIneBounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBC95DA23D5F042006EB363 /* IIMIneBounceView.m */; };
+		7CBC95DD23D60289006EB363 /* anzhuoduanliulanqidakai.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC95DC23D60289006EB363 /* anzhuoduanliulanqidakai.png */; };
+		7CBC95DF23D602E9006EB363 /* shantang-map-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC95DE23D602E9006EB363 /* shantang-map-2.png */; };
+		7CBC95E123D60BAF006EB363 /* 8B240582-2C3F-41BA-937F-38B440174DAC.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBC95E023D60BAF006EB363 /* 8B240582-2C3F-41BA-937F-38B440174DAC.png */; };
 		7CE4D2B723D2C127004D6308 /* IIRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4D2B623D2C127004D6308 /* IIRegistrationViewController.m */; };
 		7CE4D2BA23D2C28B004D6308 /* IIRegistrationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4D2B923D2C28B004D6308 /* IIRegistrationView.m */; };
 		7CE4D2BD23D2C9A6004D6308 /* landSpot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE4D2BC23D2C9A6004D6308 /* landSpot.png */; };
@@ -95,6 +99,11 @@
 		7CBC95D323D58A25006EB363 /* 表情管理.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "表情管理.png"; sourceTree = "<group>"; };
 		7CBC95D523D58A5B006EB363 /* 私密信箱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "私密信箱.png"; sourceTree = "<group>"; };
 		7CBC95D723D58B2D006EB363 /* 管理岛屿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "管理岛屿.png"; sourceTree = "<group>"; };
+		7CBC95D923D5F041006EB363 /* IIMIneBounceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIMIneBounceView.h; sourceTree = "<group>"; };
+		7CBC95DA23D5F042006EB363 /* IIMIneBounceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIMIneBounceView.m; sourceTree = "<group>"; };
+		7CBC95DC23D60289006EB363 /* anzhuoduanliulanqidakai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anzhuoduanliulanqidakai.png; sourceTree = "<group>"; };
+		7CBC95DE23D602E9006EB363 /* shantang-map-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shantang-map-2.png"; sourceTree = "<group>"; };
+		7CBC95E023D60BAF006EB363 /* 8B240582-2C3F-41BA-937F-38B440174DAC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8B240582-2C3F-41BA-937F-38B440174DAC.png"; sourceTree = "<group>"; };
 		7CE4D2B523D2C127004D6308 /* IIRegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIRegistrationViewController.h; sourceTree = "<group>"; };
 		7CE4D2B623D2C127004D6308 /* IIRegistrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIRegistrationViewController.m; sourceTree = "<group>"; };
 		7CE4D2B823D2C28B004D6308 /* IIRegistrationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIRegistrationView.h; sourceTree = "<group>"; };
@@ -416,6 +425,8 @@
 				7CE4D30C23D33DD1004D6308 /* IIMIneView.m */,
 				7CB36EC823D4A09B0043EBE7 /* IIMIneFourView.h */,
 				7CB36EC923D4A09B0043EBE7 /* IIMIneFourView.m */,
+				7CBC95D923D5F041006EB363 /* IIMIneBounceView.h */,
+				7CBC95DA23D5F042006EB363 /* IIMIneBounceView.m */,
 				7CBC95CC23D58297006EB363 /* IIMIneTableViewCell.h */,
 				7CBC95CD23D58297006EB363 /* IIMIneTableViewCell.m */,
 			);
@@ -525,6 +536,8 @@
 		7CE4D30E23D35651004D6308 /* MIne */ = {
 			isa = PBXGroup;
 			children = (
+				7CBC95DE23D602E9006EB363 /* shantang-map-2.png */,
+				7CBC95DC23D60289006EB363 /* anzhuoduanliulanqidakai.png */,
 				7CBC95D723D58B2D006EB363 /* 管理岛屿.png */,
 				7CBC95D523D58A5B006EB363 /* 私密信箱.png */,
 				7CBC95D323D58A25006EB363 /* 表情管理.png */,
@@ -532,6 +545,7 @@
 				7CBC95CF23D58948006EB363 /* zhankai-4.png */,
 				7CB36ECB23D4AB560043EBE7 /* jiahao.png */,
 				7CE4D30F23D3565A004D6308 /* img-296933adb8764cbdf1f6e081ebde5d45.jpg */,
+				7CBC95E023D60BAF006EB363 /* 8B240582-2C3F-41BA-937F-38B440174DAC.png */,
 			);
 			path = MIne;
 			sourceTree = "<group>";
@@ -617,6 +631,7 @@
 				7CBC95D023D58948006EB363 /* zhankai-4.png in Resources */,
 				7C72B47623D06A34006435F4 /* LaunchScreen.storyboard in Resources */,
 				7CE4D30623D33634004D6308 /* xiaoxi-2.png in Resources */,
+				7CBC95DD23D60289006EB363 /* anzhuoduanliulanqidakai.png in Resources */,
 				7CE4D2EC23D2F7BA004D6308 /* find.png in Resources */,
 				7C72B4AB23D0B383006435F4 /* htmal5icon08-2.png in Resources */,
 				7CE4D30023D33501004D6308 /* weibiaoti--3.png in Resources */,
@@ -625,6 +640,7 @@
 				7C72B4A523D0B30D006435F4 /* mimakejian.png in Resources */,
 				7CBC95D423D58A25006EB363 /* 表情管理.png in Resources */,
 				7CE4D2FE23D33295004D6308 /* shouye-7.png in Resources */,
+				7CBC95DF23D602E9006EB363 /* shantang-map-2.png in Resources */,
 				7CE4D2FA23D33203004D6308 /* shouye-6.png in Resources */,
 				7CBC95D623D58A5B006EB363 /* 私密信箱.png in Resources */,
 				7CBC95D823D58B2D006EB363 /* 管理岛屿.png in Resources */,
@@ -634,6 +650,7 @@
 				7CE4D2EA23D2F7B4004D6308 /* home.png in Resources */,
 				7CE4D30A23D3374F004D6308 /* yuan.png in Resources */,
 				7CE4D2EE23D2F7BF004D6308 /* message.png in Resources */,
+				7CBC95E123D60BAF006EB363 /* 8B240582-2C3F-41BA-937F-38B440174DAC.png in Resources */,
 				7CE4D2F223D2F82B004D6308 /* homeSelect.png in Resources */,
 				7CE4D30423D33629004D6308 /* xiaoxi-3.png in Resources */,
 				7CBC95D223D589ED006EB363 /* 设置.png in Resources */,
@@ -695,6 +712,7 @@
 				7CE4D2E323D2F3E4004D6308 /* IIHomePageViewController.m in Sources */,
 				7CB36ECA23D4A09B0043EBE7 /* IIMIneFourView.m in Sources */,
 				7CBC95CE23D58297006EB363 /* IIMIneTableViewCell.m in Sources */,
+				7CBC95DB23D5F042006EB363 /* IIMIneBounceView.m in Sources */,
 				7CE4D2DD23D2F3B8004D6308 /* IIMessageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

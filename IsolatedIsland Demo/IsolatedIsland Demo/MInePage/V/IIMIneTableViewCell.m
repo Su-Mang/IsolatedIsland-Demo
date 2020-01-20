@@ -31,21 +31,21 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     [_picImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self).offset(5);
+        make.top.mas_equalTo(self).offset(25);
         make.left.mas_equalTo(self).offset(15);
         make.width.mas_equalTo(20);
         make.height.mas_equalTo(20);
     }];
     
     [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self).offset(5);
+        make.top.mas_equalTo(self).offset(25);
         make.left.mas_equalTo(self->_picImageView.mas_right).offset(15);
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(20);
     }];
     
     [_borderImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self).offset(5);
+        make.top.mas_equalTo(self).offset(25);
         make.right.mas_equalTo(self).offset(-15);
         make.width.mas_equalTo(10);
         make.height.mas_equalTo(10);

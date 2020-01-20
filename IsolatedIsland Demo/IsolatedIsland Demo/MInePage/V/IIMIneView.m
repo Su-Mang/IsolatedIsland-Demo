@@ -8,6 +8,7 @@
 
 #import "IIMIneView.h"
 #import "IIMIneFourView.h"
+#import "IIMIneBounceView.h"
 #import "IIMIneTableViewCell.h"
 #import <Masonry.h>
 @interface IIMIneView ()<UITableViewDelegate, UITableViewDataSource>
@@ -181,16 +182,23 @@
         [self addSubview:_mineTableView];
         _mineTableView.delegate = self;
         _mineTableView.dataSource = self;
+        _mineTableView.bounces = NO;
         _tableviewDataArry = @[@"管理岛屿",@"私密信箱",@"表情管理",@"设置"];
         [_mineTableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self->_recentLabel.mas_bottom).offset(20);
             make.left.right.mas_equalTo(self);
-            make.height.mas_equalTo(200);
+            make.height.mas_equalTo(240);
         }];
+        [_creatView.clickButton addTarget:self action:@selector(addIsand) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
-
+-(void)addIsand {
+   
+    IIMIneBounceView * mineBouceView = [[IIMIneBounceView alloc] init];
+    [mineBouceView showInView:self];
+    
+}
 #pragma mark 访客方法
 - (void)setRecntLabelNumber:(NSInteger)recentNumber {
     NSString * numberStr = [NSString stringWithFormat:@"最近有%ld位来访客",recentNumber];
@@ -204,20 +212,20 @@
     return 1;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
+    return 60;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     return nil;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 1;
+    return 0.1;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     return nil;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 1;
+    return 0.1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString * tableViewId = @"666";
@@ -228,6 +236,7 @@
     mineTableView.nameLabel.text = _tableviewDataArry[indexPath.section];
     NSString * picStr = [NSString stringWithFormat:@"%@.png",_tableviewDataArry[indexPath.section]];
     [mineTableView.picImageView setImage:[UIImage imageNamed:picStr]];
+    mineTableView.selectionStyle = UIAccessibilityTraitNone;
     return mineTableView;
     
     
