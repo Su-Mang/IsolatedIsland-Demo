@@ -44,7 +44,6 @@
     _nameLabel.font = [UIFont systemFontOfSize:12];
     [_clickButton setTitle:clicknameButton forState:UIControlStateNormal];
     [_clickButton.titleLabel setFont:[UIFont fontWithName:@"Marker Felt" size:12]];
-    
 }
 
 

@@ -18,7 +18,7 @@
         const UIColor * mainColor = [UIColor colorWithRed:0.086 green:0.5019607 blue:0.4823 alpha:1];
         const UIColor * mainBackTextfieldColor = [UIColor colorWithRed:0.937254 green:0.937254 blue:0.937254 alpha:1];
         
-            // 返回上一层Button
+              #pragma mark  返回上一层Button
             _backButton = [[UIButton alloc] init];
             [self addSubview:_backButton];
             [_backButton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
@@ -41,7 +41,7 @@
             make.height.mas_equalTo(60);
         }];
         
-            //手机号输入框
+              #pragma mark 手机号输入框
             _telTextField = [[UITextField alloc] init];
             [self addSubview:_telTextField];
             [_telTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -56,7 +56,7 @@
             _telTextField.backgroundColor = mainBackTextfieldColor;
             _telTextField.layer.cornerRadius = 10;
             
-            //验证码输入框
+              #pragma mark 验证码输入框
             _verificationTextField = [[UITextField alloc] init];
             [self addSubview:_verificationTextField];
             [_verificationTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -72,7 +72,7 @@
             _verificationTextField.backgroundColor = mainBackTextfieldColor;
             _verificationTextField.layer.cornerRadius = 10;
             
-            //获取验证码
+              #pragma mark 获取验证码
             _getverificationButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 330, 94, 50)];
             [self addSubview:_getverificationButton];
             [_getverificationButton setTitle:@"获取验证码" forState:UIControlStateNormal];
@@ -81,7 +81,7 @@
             [_getverificationButton setTitleColor:mainColor forState:UIControlStateSelected];
             
             
-            //密码输入框
+              #pragma mark 密码输入框
             _passwordTextField = [[UITextField alloc] init];
             [self addSubview:_passwordTextField];
             [_passwordTextField setValue:[NSNumber numberWithInt:20] forKey:@"paddingLeft"];
@@ -97,7 +97,7 @@
             _passwordTextField.backgroundColor = mainBackTextfieldColor;
             _passwordTextField.layer.cornerRadius = 10;
         
-            //确认密码输入框
+              #pragma mark 确认密码输入框
             _surePasswordTextField = [[UITextField alloc] init];
             [self addSubview:_surePasswordTextField];
             [_surePasswordTextField setValue:[NSNumber numberWithInt:20] forKey:@"paddingLeft"];
@@ -113,7 +113,7 @@
             _surePasswordTextField.backgroundColor = mainBackTextfieldColor;
             _surePasswordTextField.layer.cornerRadius = 10;
         
-            //完成输入框
+              #pragma mark 完成输入框
             _completeButton = [[UIButton alloc] init];
             [self addSubview:_completeButton];
             [_completeButton mas_makeConstraints:^(MASConstraintMaker *make) {

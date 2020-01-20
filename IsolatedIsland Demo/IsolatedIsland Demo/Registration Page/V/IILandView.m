@@ -17,7 +17,7 @@
     const UIColor * mainBackTextfieldColor = [UIColor colorWithRed:0.937254 green:0.937254 blue:0.937254 alpha:1];
     self = [super initWithFrame:frame];
     if (self) {
-       // 返回上一层Button
+        #pragma mark 返回上一层Button
         _backbutton = [[UIButton alloc] init];
         [self addSubview:_backbutton];
         [_backbutton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
@@ -29,7 +29,7 @@
             make.height.mas_equalTo(40);
         }];
         
-        //手机注册Button
+          #pragma mark 手机注册Button
         _registrationButton = [[UIButton alloc] init];
         [self addSubview:_registrationButton];
         [_registrationButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -44,7 +44,7 @@
       
         
         
-        //登录Button
+          #pragma mark 登录Button
         _landButton = [[UIButton alloc]init];
         [self addSubview:_landButton];
         [_landButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -57,7 +57,7 @@
         [_landButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     
     
-        //点图片
+          #pragma mark 点图片
         _spotButton = [[UIButton alloc] init];
         [self addSubview:_spotButton];
 
@@ -68,7 +68,7 @@
             make.height.mas_equalTo(20);
         }];
         
-        //手机号输入框
+          #pragma mark 手机号输入框
         _telTextField = [[UITextField alloc] init];
         [self addSubview:_telTextField];
         [_telTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -83,7 +83,7 @@
         _telTextField.backgroundColor = mainBackTextfieldColor;
         _telTextField.layer.cornerRadius = 10;
 
-        //验证码输入框
+          #pragma mark 验证码输入框
         _verificationTextField = [[UITextField alloc] init];
         [self addSubview:_verificationTextField];
         [_verificationTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -99,7 +99,7 @@
         _verificationTextField.backgroundColor = mainBackTextfieldColor;
         _verificationTextField.layer.cornerRadius = 10;
         
-        //获取验证码
+          #pragma mark 获取验证码
         _getverificationButton = [[UIButton alloc] initWithFrame:CGRectMake(260, 365, 94, 50)];
         [self addSubview:_getverificationButton];
         [_getverificationButton setTitle:@"获取验证码" forState:UIControlStateNormal];
@@ -108,7 +108,7 @@
         [_getverificationButton setTitleColor:mainColor forState:UIControlStateSelected];
         
         
-        //密码输入框
+          #pragma mark 密码输入框
         _passwordTextField = [[UITextField alloc] init];
         [self addSubview:_passwordTextField];
         [_passwordTextField setValue:[NSNumber numberWithInt:20] forKey:@"paddingLeft"];
@@ -129,7 +129,7 @@
         [_visibleButton setImage:[UIImage imageNamed:@"htmal5icon08-2.png"] forState:UIControlStateNormal];
         [_visibleButton setImage:[UIImage imageNamed:@"mimakejian.png"] forState:UIControlStateSelected];
         
-        //下一步输入框
+          #pragma mark 下一步输入框
         _nextButton = [[UIButton alloc] init];
         [self addSubview:_nextButton];
         [_nextButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -139,14 +139,14 @@
             make.height.mas_offset(50);
         }];
         [_nextButton setTitle:@"  下一步" forState:UIControlStateNormal];
-        [_nextButton setTitleColor:mainBackTextfieldColor forState:UIControlStateNormal];
+        [_nextButton setTitleColor:[UIColor colorWithRed:0.7647 green:0.7647 blue:0.7647 alpha:1] forState:UIControlStateNormal];
         _nextButton.layer.cornerRadius = 20.0;
         _nextButton.layer.borderColor = mainBackTextfieldColor.CGColor;//设置边框颜色
         _nextButton.layer.borderWidth = 1.0f;
         
         
         
-        //细节输入框
+          #pragma mark 细节输入框
         _detaillabel = [[UILabel alloc] init];
         [self addSubview:_detaillabel];
         [_detaillabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -8,13 +8,18 @@
 
 #import "IIMIneView.h"
 #import "IIMIneFourView.h"
+#import "IIMIneTableViewCell.h"
 #import <Masonry.h>
+@interface IIMIneView ()<UITableViewDelegate, UITableViewDataSource>
+@end
 @implementation IIMIneView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
+          #pragma mark  我的界面标题
         _smallmineLabel = [[UILabel alloc] init];
         [self addSubview:_smallmineLabel];
         [_smallmineLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -91,7 +96,7 @@
         _letternumberLabel.font = [UIFont systemFontOfSize:11];
         
         
-        //信签
+         #pragma mark 信签
         _letterView = [[IIMIneFourView alloc] init];
         [self addSubview:_letterView];
         [_letterView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -102,7 +107,7 @@
         }];
         [_letterView setName:@"信签" :@"22"];
         
-        //岛屿
+          #pragma mark 岛屿
         _islandView = [[IIMIneFourView alloc] init];
         [self addSubview:_islandView];
         [_islandView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -113,7 +118,7 @@
         }];
         [_islandView setName:@"信签" :@"22"];
         
-        //岛屿
+         #pragma mark 岛屿
         _islandView = [[IIMIneFourView alloc] init];
         [self addSubview:_islandView];
         [_islandView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -124,7 +129,7 @@
         }];
         [_islandView setName:@"岛屿" :@"10"];
         
-        //收藏
+          #pragma mark 收藏
         _collectView = [[IIMIneFourView alloc] init];
         [self addSubview:_collectView];
         [_collectView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -135,7 +140,7 @@
         }];
         [_collectView setName:@"收藏" :@"9"];
         
-        //创建岛屿
+          #pragma mark 创建岛屿
         _creatView = [[IIMIneFourView alloc] init];
         [self addSubview:_creatView];
         [_creatView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -146,10 +151,85 @@
         }];
         [_creatView setName:@"创建岛屿" :@""];
         [_creatView.clickButton setImage:[UIImage imageNamed:@"jiahao.png"] forState:UIControlStateNormal];
+        _mineIslandLabel = [[UILabel alloc] init];
+        [self addSubview:_mineIslandLabel];
+        [_mineIslandLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self->_letterView.mas_bottom).offset(20);
+            make.left.mas_equalTo(self->_letterView);
+            make.width.mas_equalTo(140);
+            make.height.mas_equalTo(10);
+        }];
+        NSMutableAttributedString * detailLabelstr = [[NSMutableAttributedString alloc] initWithString:@"My island 我的主页    "];
+        [detailLabelstr addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(10, 4)];//设置字体颜色
+        [detailLabelstr addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Marker Felt" size:14] range:NSMakeRange(0, 9)]; //设置字体字号和字体类别
+        [detailLabelstr addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Arial" size:10] range:NSMakeRange(10, 4)];
+        _mineIslandLabel.attributedText = detailLabelstr;
+        _recentLabel = [[UILabel alloc] init];
+        [self addSubview:_recentLabel];
+        [_recentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self->_mineIslandLabel.mas_bottom).offset(10);
+            make.left.mas_equalTo(self->_letterView);
+            make.width.mas_equalTo(100);
+            make.height.mas_equalTo(10);
+        }];
+        [_recentLabel setFont:[UIFont systemFontOfSize:10]];
+        [_recentLabel setTextColor:[UIColor colorWithRed:0.7647 green:0.7647 blue:0.7647 alpha:1]];
+        [self setRecntLabelNumber:12];
         
-        
-        
+          #pragma mark tableview创建
+        _mineTableView = [[UITableView alloc] init];
+        [self addSubview:_mineTableView];
+        _mineTableView.delegate = self;
+        _mineTableView.dataSource = self;
+        _tableviewDataArry = @[@"管理岛屿",@"私密信箱",@"表情管理",@"设置"];
+        [_mineTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self->_recentLabel.mas_bottom).offset(20);
+            make.left.right.mas_equalTo(self);
+            make.height.mas_equalTo(200);
+        }];
     }
     return self;
+}
+
+#pragma mark 访客方法
+- (void)setRecntLabelNumber:(NSInteger)recentNumber {
+    NSString * numberStr = [NSString stringWithFormat:@"最近有%ld位来访客",recentNumber];
+    [_recentLabel setText:numberStr];
+}
+#pragma mark tableview布局
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 4;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 1;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 1;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString * tableViewId = @"666";
+    IIMIneTableViewCell * mineTableView = [tableView dequeueReusableCellWithIdentifier:tableViewId];
+    if(!mineTableView) {
+        mineTableView =  [[IIMIneTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableViewId];
+    }
+    mineTableView.nameLabel.text = _tableviewDataArry[indexPath.section];
+    NSString * picStr = [NSString stringWithFormat:@"%@.png",_tableviewDataArry[indexPath.section]];
+    [mineTableView.picImageView setImage:[UIImage imageNamed:picStr]];
+    return mineTableView;
+    
+    
 }
 @end

@@ -27,8 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)IIMIneFourView * islandView;
 @property (nonatomic, strong)IIMIneFourView * collectView;
 @property (nonatomic, strong)IIMIneFourView * creatView;
-
-
+@property NSArray * tableviewDataArry;
+-(void) setRecntLabelNumber :(NSInteger)  recentNumber;
 @end
 
 NS_ASSUME_NONNULL_END

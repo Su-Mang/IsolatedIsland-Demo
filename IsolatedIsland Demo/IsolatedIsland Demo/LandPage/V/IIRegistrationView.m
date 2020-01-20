@@ -19,7 +19,7 @@
         const UIColor * mainColor = [UIColor colorWithRed:0.086 green:0.5019607 blue:0.4823 alpha:1];
         const UIColor * mainBackTextfieldColor = [UIColor colorWithRed:0.937254 green:0.937254 blue:0.937254 alpha:1];
         
-        // 返回上一层Button
+          #pragma mark  返回上一层Button
         _backButton = [[UIButton alloc] init];
         [self addSubview:_backButton];
         [_backButton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
@@ -31,7 +31,7 @@
             make.height.mas_equalTo(40);
         }];
         
-        //登录Button
+          #pragma mark 登录Button
         _landButton = [[UIButton alloc]init];
         [self addSubview:_landButton];
         [_landButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -45,7 +45,7 @@
         [_landButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         
         
-        //点图片
+          #pragma mark 点图片
         _spotButton = [[UIButton alloc] init];
         [self addSubview:_spotButton];
         
@@ -56,7 +56,7 @@
             make.height.mas_equalTo(20);
         }];
         
-        //手机号输入框
+          #pragma mark 手机号输入框
         _telTextField = [[UITextField alloc] init];
         [self addSubview:_telTextField];
         [_telTextField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -71,7 +71,7 @@
         _telTextField.backgroundColor = mainBackTextfieldColor;
         _telTextField.layer.cornerRadius = 10;
 
-        //密码输入框
+          #pragma mark 密码输入框
         _passwordTextField = [[UITextField alloc] init];
         [self addSubview:_passwordTextField];
         [_passwordTextField setValue:[NSNumber numberWithInt:20] forKey:@"paddingLeft"];
@@ -94,7 +94,7 @@
         [_forgetPasswordButton.titleLabel setFont:[UIFont systemFontOfSize:TextFieldfont]];
         [_forgetPasswordButton setTitleColor:mainColor forState:UIControlStateNormal];
        
-        //完成输入框
+          #pragma mark 完成输入框
         _completeButton = [[UIButton alloc] init];
         [self addSubview:_completeButton];
         [_completeButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -104,14 +104,14 @@
             make.height.mas_offset(50);
         }];
         [_completeButton setTitle:@"  登陆" forState:UIControlStateNormal];
-        [_completeButton setTitleColor:mainBackTextfieldColor forState:UIControlStateNormal];
+        [_completeButton setTitleColor:[UIColor colorWithRed:0.7647 green:0.7647 blue:0.7647 alpha:1] forState:UIControlStateNormal];
         _completeButton.layer.cornerRadius = 20.0;
         _completeButton.layer.borderColor = mainBackTextfieldColor.CGColor;//设置边框颜色
         _completeButton.layer.borderWidth = 1.0f;
         
         
         
-        //细节输入框
+         #pragma mark 细节输入框
         _detailLabel = [[UILabel alloc] init];
         [self addSubview:_detailLabel];
         [_detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -127,6 +127,8 @@
         [detailLabelstr addAttribute:NSForegroundColorAttributeName value:mainColor range:NSMakeRange(15, 9)];//设置字体颜色
         [detailLabelstr addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Arial" size:12] range:NSMakeRange(0, 24)]; //设置字体字号和字体类别
         _detailLabel.attributedText = detailLabelstr;
+      
+        
         
     }
     return self;
