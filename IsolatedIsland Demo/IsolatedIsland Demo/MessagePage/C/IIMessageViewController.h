@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class IIMessageVIew;
 @interface IIMessageViewController : UIViewController
-
+@property (nonatomic, strong)IIMessageVIew * messageview;
 @end
 
 NS_ASSUME_NONNULL_END

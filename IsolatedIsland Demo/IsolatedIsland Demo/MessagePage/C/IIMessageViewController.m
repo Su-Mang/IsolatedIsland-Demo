@@ -7,7 +7,7 @@
 //
 
 #import "IIMessageViewController.h"
-
+#import "IIMessageVIew.h"
 @interface IIMessageViewController ()
 
 @end
@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationController.navigationBar.hidden = YES;
+    self.view.backgroundColor = [UIColor whiteColor];
+    _messageview =  [[IIMessageVIew alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:_messageview];
+    
 }
 
 /*
