@@ -9,6 +9,7 @@
 #import "IIMessageVIew.h"
 #import "IIMessageGroupModel.h"
 #import "IIGroupMessageTableViewCell.h"
+#import "IIMessageBounceView.h"
 #import <Masonry.h>
 @interface IIMessageVIew ()<UITableViewDelegate, UITableViewDataSource>
 @end
@@ -51,11 +52,12 @@
         _addFriendButton = [[UIButton alloc] init];
         [self addSubview:_addFriendButton];
         [_addFriendButton setImage:[UIImage imageNamed:@"jiahaoyou.png"] forState:UIControlStateNormal];
+        [_addFriendButton addTarget:self action:@selector(addView) forControlEvents:UIControlEventTouchUpInside];
         [_addFriendButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(self->_smallMessageLabel.mas_bottom).offset(-5);
             make.right.mas_equalTo(self).offset(-20);
-            make.width.mas_equalTo(40);
-            make.height.mas_equalTo(40);
+            make.width.mas_equalTo(50);
+            make.height.mas_equalTo(50);
         }];
         _groupTableview = [[UITableView alloc] init];
         [self addSubview:_groupTableview];
@@ -70,7 +72,14 @@
     return self;
 }
 
+
+-(void)addView {
+    IIMessageBounceView * messageView =[[IIMessageBounceView alloc]init];
+    [messageView showInView:self];
+}
+
 #pragma mark tableview布局
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return _groupMutableArry.count;
 }

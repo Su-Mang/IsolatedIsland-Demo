@@ -29,6 +29,11 @@
 		7C90DF5223D987BC00AF04B6 /* tishi.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C90DF5123D987BC00AF04B6 /* tishi.png */; };
 		7C90DF5423D987E200AF04B6 /* fangke.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C90DF5323D987E200AF04B6 /* fangke.png */; };
 		7C90DF5623D9891D00AF04B6 /* sixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C90DF5523D9891D00AF04B6 /* sixin.png */; };
+		7C90DF5C23D9CED000AF04B6 /* IIMessageBounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C90DF5B23D9CED000AF04B6 /* IIMessageBounceView.m */; };
+		7C90DF5F23D9CFC600AF04B6 /* IIMessagecellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C90DF5E23D9CFC600AF04B6 /* IIMessagecellView.m */; };
+		7C90DF6123D9DDF300AF04B6 /* tianjia.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C90DF6023D9DDF300AF04B6 /* tianjia.png */; };
+		7C90DF6323D9DE4000AF04B6 /* haoyou.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C90DF6223D9DE4000AF04B6 /* haoyou.png */; };
+		7C90DF6523D9DE5A00AF04B6 /* saoyisao-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C90DF6423D9DE5A00AF04B6 /* saoyisao-2.png */; };
 		7CB36ECA23D4A09B0043EBE7 /* IIMIneFourView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB36EC923D4A09B0043EBE7 /* IIMIneFourView.m */; };
 		7CB36ECC23D4AB560043EBE7 /* jiahao.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB36ECB23D4AB560043EBE7 /* jiahao.png */; };
 		7CBC95CE23D58297006EB363 /* IIMIneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBC95CD23D58297006EB363 /* IIMIneTableViewCell.m */; };
@@ -106,6 +111,13 @@
 		7C90DF5123D987BC00AF04B6 /* tishi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tishi.png; sourceTree = "<group>"; };
 		7C90DF5323D987E200AF04B6 /* fangke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fangke.png; sourceTree = "<group>"; };
 		7C90DF5523D9891D00AF04B6 /* sixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sixin.png; sourceTree = "<group>"; };
+		7C90DF5A23D9CED000AF04B6 /* IIMessageBounceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIMessageBounceView.h; sourceTree = "<group>"; };
+		7C90DF5B23D9CED000AF04B6 /* IIMessageBounceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIMessageBounceView.m; sourceTree = "<group>"; };
+		7C90DF5D23D9CFC600AF04B6 /* IIMessagecellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIMessagecellView.h; sourceTree = "<group>"; };
+		7C90DF5E23D9CFC600AF04B6 /* IIMessagecellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIMessagecellView.m; sourceTree = "<group>"; };
+		7C90DF6023D9DDF300AF04B6 /* tianjia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tianjia.png; sourceTree = "<group>"; };
+		7C90DF6223D9DE4000AF04B6 /* haoyou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haoyou.png; sourceTree = "<group>"; };
+		7C90DF6423D9DE5A00AF04B6 /* saoyisao-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saoyisao-2.png"; sourceTree = "<group>"; };
 		7CB36EC823D4A09B0043EBE7 /* IIMIneFourView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIMIneFourView.h; sourceTree = "<group>"; };
 		7CB36EC923D4A09B0043EBE7 /* IIMIneFourView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIMIneFourView.m; sourceTree = "<group>"; };
 		7CB36ECB23D4AB560043EBE7 /* jiahao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiahao.png; sourceTree = "<group>"; };
@@ -326,6 +338,9 @@
 				7C90DF5123D987BC00AF04B6 /* tishi.png */,
 				7C90DF5323D987E200AF04B6 /* fangke.png */,
 				7C90DF5523D9891D00AF04B6 /* sixin.png */,
+				7C90DF6023D9DDF300AF04B6 /* tianjia.png */,
+				7C90DF6223D9DE4000AF04B6 /* haoyou.png */,
+				7C90DF6423D9DE5A00AF04B6 /* saoyisao-2.png */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -485,6 +500,10 @@
 				7C4FC25123D7350300D515E2 /* IIMessageVIew.m */,
 				7C90DF4B23D964D100AF04B6 /* IIGroupMessageTableViewCell.h */,
 				7C90DF4C23D964D100AF04B6 /* IIGroupMessageTableViewCell.m */,
+				7C90DF5A23D9CED000AF04B6 /* IIMessageBounceView.h */,
+				7C90DF5B23D9CED000AF04B6 /* IIMessageBounceView.m */,
+				7C90DF5D23D9CFC600AF04B6 /* IIMessagecellView.h */,
+				7C90DF5E23D9CFC600AF04B6 /* IIMessagecellView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -674,9 +693,11 @@
 				7CE4D2F823D2F83A004D6308 /* mineSelect.png in Resources */,
 				7C72B4A523D0B30D006435F4 /* mimakejian.png in Resources */,
 				7C90DF5423D987E200AF04B6 /* fangke.png in Resources */,
+				7C90DF6123D9DDF300AF04B6 /* tianjia.png in Resources */,
 				7CBC95D423D58A25006EB363 /* 表情管理.png in Resources */,
 				7CE4D2FE23D33295004D6308 /* shouye-7.png in Resources */,
 				7CBC95DF23D602E9006EB363 /* shantang-map-2.png in Resources */,
+				7C90DF6523D9DE5A00AF04B6 /* saoyisao-2.png in Resources */,
 				7CE4D2FA23D33203004D6308 /* shouye-6.png in Resources */,
 				7CBC95D623D58A5B006EB363 /* 私密信箱.png in Resources */,
 				7CBC95D823D58B2D006EB363 /* 管理岛屿.png in Resources */,
@@ -687,6 +708,7 @@
 				7CE4D30A23D3374F004D6308 /* yuan.png in Resources */,
 				7CE4D2EE23D2F7BF004D6308 /* message.png in Resources */,
 				7C90DF4A23D962B600AF04B6 /* jiahaoyou.png in Resources */,
+				7C90DF6323D9DE4000AF04B6 /* haoyou.png in Resources */,
 				7CBC95E123D60BAF006EB363 /* 8B240582-2C3F-41BA-937F-38B440174DAC.png in Resources */,
 				7C90DF5623D9891D00AF04B6 /* sixin.png in Resources */,
 				7C90DF5223D987BC00AF04B6 /* tishi.png in Resources */,
@@ -734,6 +756,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C90DF5F23D9CFC600AF04B6 /* IIMessagecellView.m in Sources */,
 				7C72B49723D079B1006435F4 /* IILandRegistrationViewController.m in Sources */,
 				7C72B46E23D06A26006435F4 /* ViewController.m in Sources */,
 				7CE4D2C723D2D125004D6308 /* IIForgetView.m in Sources */,
@@ -749,6 +772,7 @@
 				7C72B46B23D06A26006435F4 /* AppDelegate.m in Sources */,
 				7C90DF5023D9835300AF04B6 /* IIMessageGroupModel.m in Sources */,
 				7C72B49A23D079F3006435F4 /* IILandViewController.m in Sources */,
+				7C90DF5C23D9CED000AF04B6 /* IIMessageBounceView.m in Sources */,
 				7CE4D30D23D33DD1004D6308 /* IIMIneView.m in Sources */,
 				7CE4D2E323D2F3E4004D6308 /* IIHomePageViewController.m in Sources */,
 				7CB36ECA23D4A09B0043EBE7 /* IIMIneFourView.m in Sources */,
